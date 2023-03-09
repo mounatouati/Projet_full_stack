@@ -44,17 +44,17 @@ Creer un dépot GitHub/GitLab  , faire un premier push sur la branche main , et 
     * npm install mongoose
     * npm install jsonwebtoken 
     * npm run dev 
-  
+
+-  Configurer server  : Dans le fichier server.js dans le dossier BACK aon créer un serveur ExpressJS 
+
 -FRONT:
     * npx create-react-app my-app
     * cd my-app
     * npm start
 
-    ==> modifeir package.json : ajouter 
-                         "proxy": "http://localhost:3000/"
+    ==> modifier package.json : ajouter 
+                         "proxy": "http://localhost:3001/"
 
-# Configurer server  :
-   -Dans le fichier server.js dans le dossier BACK aon créer un serveur ExpressJS 
 
 # FRONT creer les composant :
 
