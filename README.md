@@ -24,3 +24,57 @@ L'utilisateur peut créer des articles, un article consiste en:
 -----
 
 Creer un dépot GitHub/GitLab  , faire un premier push sur la branche main , et inviter djemai-samy sur le dépôt 
+
+# Etape initialisation 
+
+- Créer deux dosiers BACK et FRONT 
+-BACK:
+    * npm init 
+    * npm install nodemon --save-dev
+    * npm install express --save
+
+    Créez un fichier server.js 
+     ==> modifier package.json : ajouter        
+                         "type":"module", 
+                         "script":{
+                         "start":"node server.js", 
+                         "dev":"nodemon server.js"
+                       }	
+    * npm install morgan 
+    * npm install mongoose
+    * npm install jsonwebtoken 
+    * npm run dev 
+  
+-FRONT:
+    * npx create-react-app my-app
+    * cd my-app
+    * npm start
+
+    ==> modifeir package.json : ajouter 
+                         "proxy": "http://localhost:3000/"
+
+# Configurer server  :
+   -Dans le fichier server.js dans le dossier BACK aon créer un serveur ExpressJS 
+
+# FRONT creer les composant :
+
+Pages:
+   *Auth
+   *Home
+   *ListeArticles
+   *Navbar 
+   *Footer
+
+Containers : LoginForm 
+             SignupForm
+
+# Back creer la Base de donnée  
+  
+  -Creer une base de données sur MongoDB 
+  -initialiser la connection dans le fichier servers.js 
+- creer les: - models 
+             - routes
+             - controllers
+- creer le fichier token.js (pour recuperer et verifier un token )
+
+   							
